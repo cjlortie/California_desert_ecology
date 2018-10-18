@@ -49,7 +49,7 @@ cali <- get_map(location = c(lon = -119.625, lat = 35.12), zoom = 5)
 p <-ggmap(cali)
 
 p + 
-  geom_point(data=sites, aes(x=long, y=lat), alpha = .5, size = 1) + 
+  geom_point(data=sites, aes(x=long, y=lat), alpha = .5, size = 2) + 
   labs(x = "longitude", y = "latitude")
 
 cali <- get_map(location = c(lon = -119.625, lat = 35.12), zoom = 6)
